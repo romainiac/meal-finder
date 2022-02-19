@@ -90,8 +90,13 @@ function addMealToDOM(meal) {
   `;
 }
 
+function getRandomMeal() {
+  // clear meals and heading
+}
+
 // event listeners
 submit.addEventListener('submit', searchMeal);
+random.addEventListener('click', randomMeal);
 
 mealsEl.addEventListener('click', (e) => {
   const mealInfo = e.path.find((item) => {
